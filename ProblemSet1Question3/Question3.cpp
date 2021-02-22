@@ -80,7 +80,6 @@ int main() {
     int nva = 0; //number variable assignments
 
     bool Problem2PartA = functionone(a, b, c, d, e, f, nva);
-
     if (Problem2PartA == true)
     {
         cout << "Correct, after " << nva << " assignments!" << endl;
@@ -100,11 +99,11 @@ int main() {
         cout << "Rip failed Question 2, after " << nva << " assignments. Be better." << endl;
     //cout << endl << "Q.E.D" << endl;
 
-    bool Problem2PartC = functionthree(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, nva)
+    bool Problem2PartC = functionthree(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, nva);
     if(Problem2PartC == true)
     {
         cout << "Correct once again, after " << nva << " assignments!" << endl;
-        cout << " a =" << a << "| b =" << b << "| c =" << c << "| d =" << d << "| e =" << e << "| f =" << f << "| g = " << g << "| h = " << h << "| i = " << i << "| j = " << j << "| nva =" << nva << endl;
+        cout << " a =" << a << "| b =" << b << "| c =" << c << "| d =" << d << "| e =" << e << "| f =" << f << "| g = " << g << "| h = " << h << "| i = " << i << "| j = " << j << "| k = " << k << "| l = " << l << "| m = " << m << "| n = " << m << "| o = " << o << "| nva =" << nva << endl;
     }
 
     return 0;
