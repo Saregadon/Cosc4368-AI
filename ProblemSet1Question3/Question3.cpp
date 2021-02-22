@@ -64,7 +64,6 @@ bool functiontwo(int& a, int& b, int& c, int &d, int& e, int& f, int &g, int &h,
 bool functionthree(int& a, int& b, int& c, int& d, int& e, int& f, int& g, int& h, int& i, int&j, int& k, int& l, int& m, int& n, int& o, int &nva)
 {
     o = sqrt(g*h*i*b+133);
-
     for(k = 0; k < 51; k++, nva++) //time complexity n
     {
         m = (pow(k,2)-6)/2;
@@ -83,7 +82,7 @@ bool functionthree(int& a, int& b, int& c, int& d, int& e, int& f, int& g, int& 
                         }
                     }
                 }
-            }   
+            }
         }
     }
 
@@ -120,7 +119,7 @@ int main() {
     if(Problem2PartC == true)
     {
         cout << "Correct once again, after " << nva << " assignments!" << endl;
-        cout << " a =" << a << "| b =" << b << "| c =" << c << "| d =" << d << "| e =" << e << "| f =" << f << "| g = " << g << "| h = " << h << "| i = " << i << "| j = " << j << "| k = " << k << "| l = " << l << "| m = " << m << "| n = " << m << "| o = " << o << "| nva =" << nva << endl;
+        cout << " a =" << a << "| b =" << b << "| c =" << c << "| d =" << d << "| e =" << e << "| f =" << f << "| g = " << g << "| h = " << h << "| i = " << i << "| j = " << j << "| k = " << k << "| l = " << l << "| m = " << m << "| n = " << n << "| o = " << o << "| nva =" << nva << endl;
     }
     else
         cout << "Rip failed Question 3, after " << nva << " assignments. Almost there chief." << endl;
