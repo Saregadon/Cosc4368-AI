@@ -40,17 +40,17 @@ bool functionone(int &a, int &b, int &c, int &d, int &e, int &f, int &nva)
 
 bool functiontwo(int& a, int& b, int& c, int &d, int& e, int& f, int &g, int &h, int &i, int &j, int& nva)
 {
-    for(g = 1; g <= 50; g++, nva++)
+    for(g = 1; g < 51; g++, nva++)
     {
-        if(a + d == pow(f - g , 2) - 1 && pow(g - c, 2) == f*c*c + 1) //problem 6 and 9
+        if(a + d == pow(f - g , 2) - 1 && pow(g - c, 2) == f*(pow(c,2)) + 1) //problem 6 and 9
         {
-            for(j = 1; j <= 50; j++, nva++)
+            for(j = 1; j < 51; j++, nva++)
             {
                 if(4*j == pow(g, 2) + 39) //problem 7
                 {
-                    for(h = 1; h <= 50; h++, nva++)
+                    for(h = 1; h < 51; h++, nva++)
                     {
-                        for(i = 1; i <= 50; i++, nva++) //time complexity = n^
+                        for(i = 1; i < 51; i++, nva++) //time complexity = n^
                         {
                             if((h*j + e*12) == pow(g + i, 2) && pow(i-g, 9) == pow(f-h, 3)) //problem 5 and 8
                             {
