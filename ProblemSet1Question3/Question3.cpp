@@ -45,7 +45,8 @@ bool functiontwo(int& a, int& b, int& c, int &d, int& e, int& f, int &g, int &h,
         if(a + d == pow(f - g , 2) - 1 && pow(g - c, 2) == f*(pow(c,2)) + 1) //problem 6 and 9
         {
             j = (pow(g,2) + 39)/4; //problem 7
-            for(h = 1; h < 51; h++, nva++) //time complexity = n^2
+            //h = j+e*12;
+            //for(h = 1; h < 51; h++, nva++) //time complexity = n^2
             {
                 for(i = 1; i < 51; i++, nva++) //time complexity = n^3
                 {
