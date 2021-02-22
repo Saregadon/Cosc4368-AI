@@ -68,7 +68,38 @@ bool functiontwo(int& a, int& b, int& c, int &d, int& e, int& f, int &g, int &h,
 
 bool functionthree(int& a, int& b, int& c, int& d, int& e, int& f, int& g, int& h, int& i, int&j, int& k, int& l, int& m, int& n, int& o, int &nva)
 {
-
+    for(k = 0; k < 51; k++, nva++)
+    {
+        for(m = 0; m < 51; m++, nva++)
+        {
+            if(2*m == pow(k,2)-6)
+            {
+                for(n = 0; n < 51; n++, nva++)
+                {
+                    for(o = 0; o < 51; o++, nva++)
+                    {
+                        if((pow(n-o,3)+7 == ((f-i)*n)) && (pow(n,2) == pow(m,2) + 291))
+                        {
+                            if(pow(o,2) == g*h*i*b + 133)
+                            {
+                                if(m+o == pow(k,2)-10)
+                                {
+                                    for(l = 0; l < 51; l++, nva++)
+                                    {
+                                        if(pow(l,3)+i == (l+b)*k)
+                                        {
+                                            return true;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
 
     return false;
 }
