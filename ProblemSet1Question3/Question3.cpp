@@ -74,7 +74,7 @@ bool functionthree(int& a, int& b, int& c, int& d, int& e, int& f, int& g, int& 
             {
                 if(m+o == pow(k,2)-10)//issue 14
                 {
-                    for(l = 0; l < 51; l++, nva++) //time complexity n^3
+                    for(l = 0; l < 51; l++, nva++) //time complexity n^2
                     {
                         if(pow(l,3)+i == (l+b)*k)//issue 15
                         {
