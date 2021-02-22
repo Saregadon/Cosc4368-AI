@@ -5,9 +5,8 @@ using namespace std;
 
 bool functionone(int &a, int &b, int &c, int &d, int &e, int &f, int &nva)
 {
-    for (b = 1, c = 2; b <= 47, c <= 47; b++, c++, nva+=2)  //b & c must be = to each other
+    for (b = 1, c = 2; b <= 47, c <= 47; b++, c++, nva+=2) //b & c must be less than 47
     {        
-                                                            //b & c must be less than 47
         for (e = 1; e <= 50; e++, nva++)
         {
             for (f = 1; f <= 50; f++, nva++)
@@ -41,23 +40,19 @@ bool functionone(int &a, int &b, int &c, int &d, int &e, int &f, int &nva)
 
 bool functiontwo(int& a, int& b, int& c, int &d, int& e, int& f, int &g, int &h, int &i, int &j, int& nva)
 {
-    for(g = 1; g <= 50; g++)
+    for(g = 1; g <= 50; g++, nva++)
     {
-        nva++;
         if(a + d == pow(f - g , 2) - 1 && pow(g - c, 2) == f*c*c + 1) //problem 6 and 9
         {
-            for(j = 1; j <= 50; j++)
+            for(j = 1; j <= 50; j++, nva++)
             {
-                nva++;
                 if(4*j == pow(g, 2) + 39) //problem 7
                 {
-                    for(h = 1; h <= 50; h++)
+                    for(h = 1; h <= 50; h++, nva++)
                     {
-                        nva++;
-                        for(i = 1; i <= 50; i++)
+                        for(i = 1; i <= 50; i++, nva++)
                         {
-                            nva++;
-                            if(h*j + e*12 == pow(g + i, 2) && pow(i-g, 9) == pow(f-h, 3)) //problem 5 and 8
+                            if((h*j + e*12) == pow(g + i, 2) && pow(i-g, 9) == pow(f-h, 3)) //problem 5 and 8
                             {
                                 return true;
                             }
