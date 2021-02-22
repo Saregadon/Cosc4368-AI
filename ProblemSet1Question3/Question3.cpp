@@ -63,36 +63,29 @@ bool functiontwo(int& a, int& b, int& c, int &d, int& e, int& f, int &g, int &h,
 
 bool functionthree(int& a, int& b, int& c, int& d, int& e, int& f, int& g, int& h, int& i, int&j, int& k, int& l, int& m, int& n, int& o, int &nva)
 {
+    o = sqrt(g*h*i*b+133);
+
     for(k = 0; k < 51; k++, nva++) //time complexity n
     {
-        for(m = 0; m < 51; m++, nva++) //time complexity n^2
+        m = (pow(k,2)-6)/2;
+        if(2*m == pow(k,2)-6) //issue 10
         {
-            if(2*m == pow(k,2)-6) //issue 10
+            for(n = 0; n < 51; n++, nva++) //time complexity n^2
             {
-                for(n = 0; n < 51; n++, nva++) //time complexity n^3
+                if((pow(n-o,3)+7 == ((f-i)*n)) && (pow(n,2) == pow(m,2) + 291))//issue 11 and 12
                 {
-                    for(o = 0; o < 51; o++, nva++) //time complexity n^4
+                    if(m+o == pow(k,2)-10)//issue 14
                     {
-                        if((pow(n-o,3)+7 == ((f-i)*n)) && (pow(n,2) == pow(m,2) + 291))//issue 11 and 12
+                        for(l = 0; l < 51; l++, nva++) //time complexity n^3
                         {
-                            if(pow(o,2) == g*h*i*b + 133)//issue 13
+                            if(pow(l,3)+i == (l+b)*k)//issue 15
                             {
-                                if(m+o == pow(k,2)-10)//issue 14
-                                {
-                                    for(l = 0; l < 51; l++, nva++) //time complexity n^5
-                                    {
-                                        if(pow(l,3)+i == (l+b)*k)//issue 15
-                                        {
-                                            return true;
-                                        }
-                                    }
-                                }
+                                return true;
                             }
                         }
                     }
-                }
-                
-            }
+                }   
+            }   
         }
     }
 
