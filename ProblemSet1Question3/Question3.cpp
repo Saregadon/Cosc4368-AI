@@ -136,6 +136,8 @@ int main() {
         cout << "Correct once again, after " << nva << " assignments!" << endl;
         cout << " a =" << a << "| b =" << b << "| c =" << c << "| d =" << d << "| e =" << e << "| f =" << f << "| g = " << g << "| h = " << h << "| i = " << i << "| j = " << j << "| k = " << k << "| l = " << l << "| m = " << m << "| n = " << m << "| o = " << o << "| nva =" << nva << endl;
     }
+    else
+        cout << "Rip failed Question 3, after " << nva << " assignments. Almost there chief." << endl;
 
     return 0;
 }
