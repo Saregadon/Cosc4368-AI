@@ -21,7 +21,7 @@ bool functionone(int &a, int &b, int &c, int &d, int &e, int &f, int &nva)
                     break;
 
                 // Problem 2, 3, & 4
-                if ((e + f + 21) * (e + f + 21) == pow(e, 2) * a + 417 && e + f < a)//replicate d by doing e+f+21
+                if (pow(e + f + 21,2) == pow(e, 2) * a + 417 && e + f < a)//replicate d by doing e+f+21
                 {
                     // Problem 2
                     if (e + f + 21 <= 50)//cannot go over 50
@@ -50,7 +50,7 @@ bool functiontwo(int& a, int& b, int& c, int &d, int& e, int& f, int &g, int &h,
                 {
                     for(h = 1; h <= 50; h++, nva++)
                     {
-                        for(i = 1; i <= 50; i++, nva++)
+                        for(i = 1; i <= 50; i++, nva++) //time complexity = n^
                         {
                             if((h*j + e*12) == pow(g + i, 2) && pow(i-g, 9) == pow(f-h, 3)) //problem 5 and 8
                             {
