@@ -41,47 +41,35 @@ bool functionone(int &a, int &b, int &c, int &d, int &e, int &f, int &nva)
 
 bool functiontwo(int& a, int& b, int& c, int &d, int& e, int& f, int &g, int &h, int &i, int &j, int& nva)
 {
-    for (int h = 1, j = 1; h <= 50, j <= 50; h++, j++, nva++)
+    for(g = 1; g <= 50; g++)
     {
-        for (int g = 1; g <= 50; g++, nva++)
+        nva++;
+        //Constraint 6 and Constraint 9 (A+D=(F-G)**2-1) & ((G-C)**2= F*C*C+1)
+        if(a + d == pow(f - g , 2) - 1 && pow(g - c, 2) == f*c*c + 1)
         {
-            for (int i = 1; i <= 50; i++, nva++)
+            for(j = 1; j <= 50; j++)
             {
-                if (a + d == (pow(f - g, 2) - 1))
+                nva++;
+                //constraint 7 (4*J=G**2+39)
+                if(4*j == pow(g, 2) + 39)
                 {
-                    nva++;
-                    if ((h * j + e * 12) == pow(g + i, 2))
+                    for(h = 1; h <= 50; h++)
                     {
                         nva++;
-                        if (4 * j == (pow(g, 2) + 39))
-                        {
-                            nva++;
-                            if (pow(i - g, 9) == pow(f - h, 3))
+                            for(i = 1; i <= 50; i++)
                             {
                                 nva++;
-                                if (pow(g - c, 2) == f * c * c + 1)
+                                // Constraint 5 and Constraint 8 (H*J+E*12=(G+I)**2) & ((I-G)**8=(F-H)**3)
+                                if(h*j + e*12 == pow(g + i, 2) && pow(i-g, 9) == pow(f-h, 3))
                                 {
-                                    g = sqrt(g - c);
-                                    nva++;
                                     return true;
                                 }
-                                else
-                                    break;
                             }
-                            else
-                                break;
                         }
-                        else
-                            break;
                     }
-                    else
-                        break;
                 }
-                else
-                    break;
             }
         }
-    }
 
     return false;
 }
