@@ -5,7 +5,7 @@ using namespace std;
 
 bool functionone(int &a, int &b, int &c, int &d, int &e, int &f, int &nva)
 {
-    for (b = 2, c = 1; b <= 47, c <= 47; b++, ++c, nva+=2)   //b & c must be = to each other
+    for (b = 1, c = 2; b <= 47, c <= 47; b++, c++, nva+=2)  //b & c must be = to each other
     {        
                                                             //b & c must be less than 47
         for (e = 1; e <= 50; e++, nva++)
